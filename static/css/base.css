@@ -1,0 +1,61 @@
+h2 {
+    color: purple;
+}
+
+body {
+    background-color: #8D99AE;
+    color: #012A4A;
+}
+
+.button {
+    padding: 7px;
+    background-color: #012A4A;
+    border-radius: 15px;
+    color: white;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.button:hover {
+    background-color: red;
+}
+
+.login {
+    border: 2px solid midnightblue;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 200px;
+    font-size: 25px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 13px;
+
+    overflow: hidden;
+}
+li a {
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+}
+li {
+    float: left;
+}
+a.home {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+}
+
+a.home:hover {
+    color: red;
+}
+
+.signup {
+    border: 2px solid #012A4A;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 70px;
+    font-size: 20px;
+}

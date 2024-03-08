@@ -9,6 +9,6 @@ class CustomUserAdim(UserAdmin):
     add_form = CustomUserCreationForm
     form = CustomUserChangeForm
     model  = CustomUser
-    list_display = ('username','email', 'age', 'is_staff', )
+    list_display = ('username','email', 'age', 'password', 'is_staff', )
 
 admin.site.register(CustomUser, CustomUserAdim)

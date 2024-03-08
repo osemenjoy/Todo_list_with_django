@@ -1,12 +1,15 @@
 {% extends 'base.html' %}
 
-{% block title %} Login Page {% endblock title %}
+{% block title %}Login Page{% endblock title %}
 
 {% block content %}
-<form action="" method="post">
+
+<form action="" method="post" class="login">
+    <caption style="font-size: 30px; color:  #012A4A;"><b>Login</b></caption>
     {% csrf_token %}
     {{form.as_p}}
-    <button type="submit">Log In</button>
+    <button type="submit" class="button">Log In</button><br>
+    <a href="{% url 'password_reset' %}" style="font-size: 15px;">forgot password</a>
 </form>
 
 {% endblock content %}

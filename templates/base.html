@@ -1,17 +1,27 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% block title %} Newspaper App {% endblock title %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
-    <main>
+    <ul>
+        <li><a href="{% url 'home' %}" class="home">Home</a></li>
+        <li><a href="#" class="home">About us</a></li>
+        <li style="float: right;"><a href="{% url 'signup' %}" class="home">Sign up</a></li>
 
+        {% if user.is_authenticated %}
+        <li style="float: right;"><a href="{% url 'logout' %}" class="home">Log out</a></li>
+        <li style="float: right;"><a href="{% url 'password_change' %}" class="home">Change Password</a></li>
+        {% else %}
+        <li style="float: right;"><a href="{% url 'login' %}" class="home">Login</a></li>
+        {% endif %}
+    </ul>
         {% block content %}
 
         {% endblock content %}
-        
-    </main>
+    
 </body>
 </html>
