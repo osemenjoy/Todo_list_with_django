@@ -97,3 +97,37 @@ hr {
     font-size: 2.5pc;
     color: #012A4A;
 }
+
+.task_bar {
+    padding: 20px;
+    margin-left: 400px;
+    width: 450px;
+    background-color: #B6C9D5;
+    border: 1px solid  black;
+    border-radius: 10px;
+    font-size: 1.2pc;
+}
+
+.add {
+    padding: 20px;
+    margin: 0;
+    background-color: midnightblue;
+    border-radius: 10px;
+    font-size: 1.2pc;
+    color:  #B6C9D5;
+}
+  
+  input[type="checkbox"] + label {
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]:checked + label {
+    color: red;
+  }
+
+.task-list {
+    text-align: center;
+    padding: 50px;
+    margin-right: 500px;
+}
+  

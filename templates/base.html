@@ -9,16 +9,15 @@
 <body>
     
     <ul>
-        <li style="float: left;" class="appname"><a href="{% url 'home' %}"><b>TaskEase</b></a></li>
+        <li style="float: left;" class="appname"><b>TaskEase</b></li>
         {% if user.is_authenticated %}
-        <li ><a href="{% url 'logout' %}" class="home">Log out</a></li>
+        <li><a href="{% url 'logout' %}" class="home">Logout</a></li>
         <li ><a href="{% url 'password_change' %}" class="home">Change Password</a></li>
         {% else %}
         <li ><a href="{% url 'signup' %}" class="home">Sign up</a></li>
         <li ><a href="{% url 'login' %}" class="home">Login</a></li>
         <li><a href="#" class="home">About us</a></li>
         {% endif %}
-      
     </ul>
     <hr>
         {% block content %}

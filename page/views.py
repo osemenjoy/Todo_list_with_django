@@ -1,6 +1,10 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import ListView 
+from .models import Task
 
-class UserPageView(TemplateView):
+class UserPageView(ListView):
+    model = Task
     template_name = 'userpage.html'
+
+
 
