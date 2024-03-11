@@ -1,7 +1,26 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Home Page{% endblock title %}
 
 {% block content %}
-<h1>Welcome {{user.username}} </h1>
+<h1>Welcome To Your Productivity Web-App</h1>
+
+<div class="image_container">
+    <img class="home_image" src="{% static 'images/lazyman.jpg' %}" alt="homepage image">
+    <h1 class="catch_phrase">Avoid Chaos, <br>Organize now</h1>
+    <p style="font-size: 2pc;">Don't end up confuse on what to do,
+        or on what came first on yout list
+    </p>
+</div>
+<br><br><br>
+
+<div class="second">
+
+    <img  class="busyman" src="{% static 'images/check.jpg' %}" alt="busy man">
+    <h1>Upgrade, Organize and Relax</h1>
+    <p style="font-size: 1.8pc;">With our intuitive web app, streamlining your 
+        planning process for a stress-free experience.</p>
+</div>
+
 {% endblock content %}

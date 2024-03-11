@@ -1,9 +1,9 @@
 h2 {
-    color: purple;
+    color: #012A4A;
 }
 
 body {
-    background-color: #8D99AE;
+    background-color: #EDF2F4;
     color: #012A4A;
 }
 
@@ -30,7 +30,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 13px;
-
     overflow: hidden;
 }
 li a {
@@ -39,12 +38,12 @@ li a {
     text-align: center;
 }
 li {
-    float: left;
+    float: right;
 }
 a.home {
     display: block;
     padding: 8px;
-    color: white;
+    color:  #012A4A;;
     font-size: 20px;
 }
 
@@ -61,4 +60,40 @@ a.home:hover {
 }
 hr {
     border: 1px solid #012A4A;
+}
+
+.home_image {
+    width: 700px;
+    float: left;
+    margin-right: 70px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.catch_phrase {
+   font-size: 3pc;
+   text-align: center;
+   padding-top: 100px;
+}
+.image_container {
+    overflow: hidden;
+}
+
+.busyman {
+    width: 750px;
+    float: right;
+}
+
+.second {
+    overflow: hidden;
+}
+.second h1 {
+    font-size: 3pc;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.appname {
+    font-size: 2.5pc;
+    color: #012A4A;
 }
