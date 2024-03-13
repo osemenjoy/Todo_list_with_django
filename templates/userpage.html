@@ -2,12 +2,12 @@
 
 {% block content %}
 <h1>Welcome {{user.username}}</h1>
-    <div class="input_block">
-        <form action="" method="post">
-            <input type="text" class="task_bar" placeholder="Taskname" >
-            <button class="add">Add</button>
+
+        <form action="" method="post" class="task_form">
+          {% csrf_token %}
+          {{form.as_p }}
+          <button type="submit" class="add">Add</button>
         </form>
-    </div>
     
     <div class="task-list">
       {% for task in object_list %}

@@ -98,16 +98,6 @@ hr {
     color: #012A4A;
 }
 
-.task_bar {
-    padding: 20px;
-    margin-left: 400px;
-    width: 450px;
-    background-color: #B6C9D5;
-    border: 1px solid  black;
-    border-radius: 10px;
-    font-size: 1.2pc;
-}
-
 .add {
     padding: 20px;
     margin: 0;
@@ -130,4 +120,34 @@ hr {
     padding: 50px;
     margin-right: 500px;
 }
+input[type="text"] {
+    padding: 20px;
+    width: 450px;
+    background-color: #B6C9D5;
+    border: 1px solid  black;
+    border-radius: 10px;
+    font-size: 1.2pc;
+  }
+
+  /* Target label and input elements inside paragraphs */
+.task_form p {
+    display: inline-block;
+    text-align: right; /* Align text to the right */
+    font-size: 2pc;
+  }
+
+  .task_form {
+    margin-left: 200px;
+  }
+
+  .task {
+    display: flex;
+    align-items: center;
+  }
+  
+  .task input[type="checkbox"] {
+    margin-right: 20px;
+    margin-left: 300px;
+  }
+  
   
